@@ -9,6 +9,7 @@ import java.util.Arrays;
 @Entity
 @Table(name="dogs")
 public class Dog {
+<<<<<<< HEAD
    
     @Id
     @Column(name = "id")
@@ -32,6 +33,9 @@ public class Dog {
     private byte[] picture;
 
  public Long getId() {
+=======
+    public Long getId() {
+>>>>>>> 70f17a550aa2923a1a62aa076ba3c8a0619a50c9
         return id;
     }
 
@@ -88,6 +92,29 @@ public class Dog {
         this.picture = picture;
     }
 
+<<<<<<< HEAD
+=======
+    @Id
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
+    private Long id;
+    @NotNull
+    @Size(min=2, max=50)
+    private String name;
+    @NotNull
+    private String sex;
+    @NotNull
+    private double age;
+    @NotNull
+    private float weight;
+    @NotNull
+    @Size(min=2, max=50)
+    private String keeper;
+    @Lob
+    @Column(name="picture")
+    private byte[] picture;
+>>>>>>> 70f17a550aa2923a1a62aa076ba3c8a0619a50c9
 
 
     @Override
