@@ -89,8 +89,7 @@ public class Dog {
         this.picture = picture;
     }
 
-<<<<<<< HEAD
-=======
+
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -111,7 +110,6 @@ public class Dog {
     @Lob
     @Column(name="picture")
     private byte[] picture;
->>>>>>> 70f17a550aa2923a1a62aa076ba3c8a0619a50c9
 
 
     @Override
