@@ -9,7 +9,6 @@ import java.util.Arrays;
 @Entity
 @Table(name="dogs")
 public class Dog {
-<<<<<<< HEAD
    
     @Id
     @Column(name = "id")
@@ -32,10 +31,8 @@ public class Dog {
     @Column(name="picture")
     private byte[] picture;
 
- public Long getId() {
-=======
+
     public Long getId() {
->>>>>>> 70f17a550aa2923a1a62aa076ba3c8a0619a50c9
         return id;
     }
 
